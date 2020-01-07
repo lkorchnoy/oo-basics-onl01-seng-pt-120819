@@ -7,8 +7,10 @@ class Shoe
 end
 
 def cobble(shoe)
+  shoe.any? do |@brand, @condition|
+    shoe == repair
   puts "cobble says that the shoe has been repaired"
-  puts 
+  puts "cobble makes the shoe's condition new"
 end
   
 end
